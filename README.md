@@ -1,13 +1,5 @@
 # Programação Orientada a objetos<br>
-- O que é Polimorfismo e um exemplo de código usando polimorfismo
-- O que é Herança e um exemplo de código usando herança
-- O que é encapsulamento e um exemplo de código usando encapsulament
-
-Os exemplos dos códigos deverão ser feitos na linguagem de programação python.
-OBS: crie um README.md com o propósito do trabalho, com a explicação dos três tópicos.
-Em seguida, crie um arquivo em python para cada exemplo. Lembre de comentar o código 
-para saber qual conceito está sendo tratada ali.<br>
-
+# Profº Fabricio
 # Encapsulamento
 Encapsulament é a técnica que faz com que detalhes internos do funcionamento dos
 métodos de uma classe permaneçam ocultos para os objetos. Por conta dessa técnica,
@@ -46,63 +38,63 @@ objeto não depende da maneira que ele é implementado.<br>
 
 # Herança <br>
 
-A Herança possibilita que as classes compartilhem seus atributos, métodos e outros<br>
-membros da classe entre si. Para a ligação entre as classes, a herança adota um<br>
+A Herança possibilita que as classes compartilhem seus atributos, métodos e outros
+membros da classe entre si. Para a ligação entre as classes, a herança adota um
 relacionamento esquematizado hierarquicamente.<br>
 Na Herança temos dois tipos principais de classe:<br>
-- Classe Base: A classe que concede as características a uma outra classe.<br>
-- Classe Derivada: A classe que herda as características da classe base.<br>
-O fato de as classes derivadas herdarem atributos das classes bases assegura que<br>
-programas orientados a objetos cresçam de forma linear e não geometricamente em<br>
-complexidade. Cada nova classe derivada não possui interações imprevisíveis em relação<br>
+- Classe Base: A classe que concede as características a uma outra classe.
+- Classe Derivada: A classe que herda as características da classe base.
+O fato de as classes derivadas herdarem atributos das classes bases assegura que
+programas orientados a objetos cresçam de forma linear e não geometricamente em
+complexidade. Cada nova classe derivada não possui interações imprevisíveis em relação
 ao restante do código do sistema.<br>
-Com o uso da herança, uma classe derivada geralmente é uma implementação especifica<br>
-de um caso mais geral. A classe derivada deve apenas definir as características que a<br>
+Com o uso da herança, uma classe derivada geralmente é uma implementação especifica
+de um caso mais geral. A classe derivada deve apenas definir as características que a
 tornam única.<br>
-Por exemplo: uma classe base que serviria como um modelo genérico pode ser a classe<br>
-Pessoa com os campos Nome e Idade. Já uma classe derivada poderia ser Funcionário<br>
-com os campos Nome e Idade herdados da classe Pessoa, acrescido do campo Cargo.<br>
-De maneira natural, as pessoas visualizam o mundo sendo formado de objetos relacionados<br>
+Por exemplo: uma classe base que serviria como um modelo genérico pode ser a classe
+Pessoa com os campos Nome e Idade. Já uma classe derivada poderia ser Funcionário
+com os campos Nome e Idade herdados da classe Pessoa, acrescido do campo Cargo.
+De maneira natural, as pessoas visualizam o mundo sendo formado de objetos relacionados
 entre si hierarquicamente.<br>
-Mais um exemplo: vamos analisar a relação entre animais, mamíferos e cachorros. Os<br>
-animais, sob uma descrição abstrata, apresentam atributos, tais como tamanho, inteligência<br>
-e estrutura óssea. Apresentam também aspectos comportamentais como mover-se, dormir,<br>
-comer, respirar, etc. Esses atributos e aspectos comportamentais definem a classe dos<br>
+Mais um exemplo: vamos analisar a relação entre animais, mamíferos e cachorros. Os
+animais, sob uma descrição abstrata, apresentam atributos, tais como tamanho, inteligência
+e estrutura óssea. Apresentam também aspectos comportamentais como mover-se, dormir,
+comer, respirar, etc. Esses atributos e aspectos comportamentais definem a classe dos
 animais.<br>
-Analisando os mamíferos, que são filhos da classe animais, veremos atributos detalhados e<br>
-específicos a ele, como por exemplo, tipo de dente, pelos e glândulas mamárias.<br>
-Assim, podemos afirmar que os mamíferos são classificados como uma classe derivada dos<br>
-animais, que por sua vez, são uma classe base dos mamíferos.<br>
-Pela chamada hierárquica de classes, a classe derivada mamíferos recebe todos os<br>
-atributos de animais, partindo do princípio que uma classe derivada recebe por herança<br>
+Analisando os mamíferos, que são filhos da classe animais, veremos atributos detalhados e
+específicos a ele, como por exemplo, tipo de dente, pelos e glândulas mamárias.
+Assim, podemos afirmar que os mamíferos são classificados como uma classe derivada dos
+animais, que por sua vez, são uma classe base dos mamíferos.
+Pela chamada hierárquica de classes, a classe derivada mamíferos recebe todos os
+atributos de animais, partindo do princípio que uma classe derivada recebe por herança
 todos os atributos de seus ancestrais.<br>
 
 # Polimorfismo <br>
-Definimos Polimorfismo como um princípio a partir do qual as classes derivadas de<br>
-uma única classe base são capazes de invocar os métodos que, embora apresentem a <br>
-mesma assinatura, comportam-se de maneira diferente para cada uma das classes<br>
+Definimos Polimorfismo como um princípio a partir do qual as classes derivadas de
+uma única classe base são capazes de invocar os métodos que, embora apresentem a
+mesma assinatura, comportam-se de maneira diferente para cada uma das classes
 derivadas.<br>
-O Polimorfismo é um mecanismo por meio do qual selecionamos as funcionalidades<br>
-utilizadas de forma dinâmica por um programa no decorrer de sua execução. Com<br> 
-o Polimorfismo, os mesmos atributos e objetos podem ser utilizados em objetos<br>
+O Polimorfismo é um mecanismo por meio do qual selecionamos as funcionalidades
+utilizadas de forma dinâmica por um programa no decorrer de sua execução. Com
+o Polimorfismo, os mesmos atributos e objetos podem ser utilizados em objetos
 distintos, porém, com implementações lógicas diferentes.<br>
 Por exemplo: <br>
-podemos assumir que uma bola de futebol e uma camisa da seleção brasileira são<br>
-artigos esportivos, mas que o cálculo deles em uma venda é calculado de formas<br>
+podemos assumir que uma bola de futebol e uma camisa da seleção brasileira são
+artigos esportivos, mas que o cálculo deles em uma venda é calculado de formas
 diferentes.<br>
 Outro exemplo:<br> 
-podemos dizer que uma classe chamada Vendedor e outra chamada Diretor podem ter<br>
-como base uma classe chamada Pessoa, com um método chamado CalcularVendas. Se<br>
-este método (definido na classe base) se comportar de maneira diferente para as<br>
-chamadas feitas a partir de uma instância de Vendedor e para as chamadas feitas<br>
-a partir de uma instância de Diretor, ele será considerado um método polimórfico,<br>
-ou seja, um método de várias formas. Definimos Polimorfismo como um princípio a<br>
-partir do qual as classes derivadas de uma única classe base são capazes de <br>
-invocar os métodos que, embora apresentem a mesma assinatura, comportam-se de <br>
+podemos dizer que uma classe chamada Vendedor e outra chamada Diretor podem ter
+como base uma classe chamada Pessoa, com um método chamado CalcularVendas. Se
+este método (definido na classe base) se comportar de maneira diferente para as
+chamadas feitas a partir de uma instância de Vendedor e para as chamadas feitas
+a partir de uma instância de Diretor, ele será considerado um método polimórfico,
+ou seja, um método de várias formas. Definimos Polimorfismo como um princípio a
+partir do qual as classes derivadas de uma única classe base são capazes de
+invocar os métodos que, embora apresentem a mesma assinatura, comportam-se de
 maneira diferente para cada uma das classes derivadas.<br>
-O Polimorfismo é um mecanismo por meio do qual selecionamos as funcionalidades<br>
-utilizadas de forma dinâmica por um programa no decorrer de sua execução.<br>
-Com o Polimorfismo, os mesmos atributos e objetos podem ser utilizados em objetos<br>
+O Polimorfismo é um mecanismo por meio do qual selecionamos as funcionalidades
+utilizadas de forma dinâmica por um programa no decorrer de sua execução.
+Com o Polimorfismo, os mesmos atributos e objetos podem ser utilizados em objetos
 distintos, porém, com implementações lógicas diferentes.<br>
 
 Por exemplo: podemos assumir que uma bola de futebol e uma camisa da seleção brasileira
